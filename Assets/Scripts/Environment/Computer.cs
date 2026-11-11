@@ -1,11 +1,15 @@
-﻿using Environment.Tasks;
+using Environment.Tasks;
 using UnityEngine;
+using TMPro;
 using UnityEngine.Rendering;
 using Utils;
 
 namespace Environment {
     public class Computer : MonoBehaviour, IInteractable {
         [SerializeField] public GameObject terminalTextLight;
+        
+
+
         [SerializeField] public float cameraMoveSpeed = 5f;
         [SerializeField] public GameObject playerCameraHolder;
         public Camera playerCamera;
@@ -23,6 +27,7 @@ namespace Environment {
             
             terminalIsOn = !terminalIsOn;
             readingTerminal = !readingTerminal;
+
             
 
 //            switch(expression) {
