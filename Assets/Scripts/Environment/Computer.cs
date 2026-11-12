@@ -6,6 +6,8 @@ using Utils;
 
 namespace Environment {
     public class Computer : MonoBehaviour, IInteractable {
+
+        [SerializeField] public GenericQueue<Task> taskQueueHandler; // Put your stack/queue here :)
         [SerializeField] public GameObject terminalTextLight;
         
 
@@ -15,7 +17,7 @@ namespace Environment {
         public Camera playerCamera;
         public Camera computerCamera;
         [SerializeField] public GameObject computerCameraHolder;
-        [SerializeField] public GenericQueue<Task> taskQueueHandler; // Put your stack/queue here :)
+        
 
         public bool terminalIsOn = false;
         public bool readingTerminal = false;

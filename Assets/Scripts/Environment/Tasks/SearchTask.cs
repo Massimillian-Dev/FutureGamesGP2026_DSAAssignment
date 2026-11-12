@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "SearchTask", menuName = "Scriptable Objects/SearchTask")]
 public class SearchTask : ScriptableObject
 {
-    private BinarySearch(EmployeeGovenor.instance.allEmployees, DateTime.ParseExact("2024-06-01T12:00:00", "yyyy-MM-ddTHH:mm:ss", System.Globalization.CultureInfo.InvariantCulture));
+    //private BinarySearch(EmployeeGovenor.instance.allEmployees, DateTime.ParseExact("2024-06-01T12:00:00", "yyyy-MM-ddTHH:mm:ss", System.Globalization.CultureInfo.InvariantCulture));
 
     private void BinarySearch(DateTime[] inArray, DateTime elementToSearch)
     {
@@ -33,5 +33,6 @@ public class SearchTask : ScriptableObject
 
         Debug.Log($"Element {elementToSearch} not found in the array.");
     }
+
     
 }

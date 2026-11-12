@@ -10,10 +10,4 @@ public class EmployeeGovenor : MonoBehaviour {
         instance = this;
     }
 
-    public int binarySearch(int[] inArray, int elementToSearch) {
-        int bottomIndexOfSubarray = 0;
-        //int 
-        return -1;
-    }
-
 }
