@@ -8,10 +8,6 @@ public class EmployeeGovenor : MonoBehaviour {
 
     private void Awake() {
         instance = this;
-
-        //int low binarySearch(inArray,datetime bottomOfRange)
-        //int highbinarySearch(inArray, datetime bottomOfRange)
-        //print subarray that goes from low to high
     }
 
     public int binarySearch(int[] inArray, int elementToSearch) {

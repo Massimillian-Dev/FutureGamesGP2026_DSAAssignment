@@ -3,7 +3,8 @@
 namespace Environment.Tasks {
     [CreateAssetMenu(fileName = "Sorting Task", menuName = "Sorting Task")]
     public class SortingTask : Task {
-        
+
+        [SerializeField] public EmployeeGovenor employeeGovenor;
 
         public override void Execute() {
             //sorting stuff
