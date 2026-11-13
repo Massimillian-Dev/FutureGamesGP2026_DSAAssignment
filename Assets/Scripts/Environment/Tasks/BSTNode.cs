@@ -27,16 +27,13 @@ public class BinarySearchTree {
     }
 
     public void Insert(Environment.Employee inData) {
-        //assuming that values are unique
         BSTNode<Employee> newNode = new BSTNode<Employee>(inData);
         BSTNode<Employee>? currentNode = root;
         BSTNode<Employee> lastParent = root;
-        while(currentNode != null) { // Keep searching until we find an empty child slot
-
-
+        while(currentNode != null) {
 
             if(DateTime.ParseExact(inData.lastEntranceInEngineRoom, "yyyy-MM-ddTHH:mm:ss", System.Globalization.CultureInfo.InvariantCulture)
-            < DateTime.ParseExact(currentNode.GetData().lastEntranceInEngineRoom, "yyyy-MM-ddTHH:mm:ss", System.Globalization.CultureInfo.InvariantCulture)) /*node we are examining*/
+            < DateTime.ParseExact(currentNode.GetData().lastEntranceInEngineRoom, "yyyy-MM-ddTHH:mm:ss", System.Globalization.CultureInfo.InvariantCulture))
             {
                 lastParent = currentNode;
                 currentNode = currentNode.leftChild;
@@ -63,14 +60,11 @@ public class BinarySearchTree {
         Queue<BSTNode<Employee>> que = new Queue<BSTNode<Employee>>();
         que.Enqueue(root);
 
-            //BSTNode<Employee> currentNode = new BSTNode<Employee>(root.GetData());
-        
-
         while(que.Count > 0) {
 
             BSTNode<Employee> node = que.Dequeue();
 
-            Debug.Log(node.GetData().lastEntranceInEngineRoom);
+            Debug.Log("You Breadth First Searched " + node.GetData().lastEntranceInEngineRoom);
 
             if(node.leftChild != null ) {
                 que.Enqueue(node.leftChild);
