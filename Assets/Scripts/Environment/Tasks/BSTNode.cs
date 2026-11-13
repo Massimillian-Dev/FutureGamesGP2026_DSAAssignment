@@ -57,14 +57,6 @@ public class BinarySearchTree {
             lastParent.rightChild = newNode;
         }
 
-        ////we reached a point where lastParent has an empty child slot fitting newNode
-        //if((DateTime.ParseExact(inData.lastEntranceInEngineRoom, "yyyy-MM-ddTHH:mm:ss", System.Globalization.CultureInfo.InvariantCulture)
-        //    < DateTime.ParseExact(currentNode.GetData().lastEntranceInEngineRoom, "yyyy-MM-ddTHH:mm:ss", System.Globalization.CultureInfo.InvariantCulture))) {
-        //    lastParent.leftChild = newNode;
-        //}
-        //else {
-        //    lastParent.rightChild = newNode;
-        //}
     }
 
     public void BreadthFirstSearch() {
