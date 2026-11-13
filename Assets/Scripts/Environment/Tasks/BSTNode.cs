@@ -15,7 +15,7 @@ public class BSTNode<T> {
     }
 
     public BSTNode(Employee inData) {
-        this.data = inData;
+        data = inData;
     }
 }
 
@@ -32,6 +32,8 @@ public class BinarySearchTree {
         BSTNode<Employee>? currentNode = root;
         BSTNode<Employee> lastParent = root;
         while(currentNode != null) { // Keep searching until we find an empty child slot
+
+
 
             if(DateTime.ParseExact(inData.lastEntranceInEngineRoom, "yyyy-MM-ddTHH:mm:ss", System.Globalization.CultureInfo.InvariantCulture)
             < DateTime.ParseExact(currentNode.GetData().lastEntranceInEngineRoom, "yyyy-MM-ddTHH:mm:ss", System.Globalization.CultureInfo.InvariantCulture)) /*node we are examining*/
